@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meraki Estudio Creativo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --cream: #f7f3ec; --gold: #c9a96e; --red: #c9263a; --charcoal: #2c2420; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Lato', sans-serif; background: var(--cream); color: var(--charcoal); line-height: 1.6; }
+    
+    header { 
+      background: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center;
+      position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .logo-img { height: 50px; } /* Ajusta según el tamaño de tu logo */
+    
+    .hero { padding: 150px 5% 80px; display: flex; align-items: center; gap: 50px; flex-wrap: wrap; }
+    .hero-content { flex: 1; min-width: 300px; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 20px; }
+    .hero-img-container { flex: 1; min-width: 300px; }
+    .hero-img-container img { width: 100%; border-radius: 20px; box-shadow: 20px 20px 0 var(--gold); }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 50px 5%; }
+    .card { background: white; border-radius: 15px; overflow: hidden; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+    .card:hover { transform: translateY(-10px); }
+    .card img { width: 100%; height: 250px; object-fit: cover; }
+    .card-body { padding: 20px; text-align: center; }
+    
+    .btn { background: var(--red); color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; display: inline-block; font-weight: bold; margin-top: 20px; }
+    footer { background: var(--charcoal); color: white; padding: 40px; text-align: center; margin-top: 50px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="meraki 1.jpeg" alt="Logo Meraki" class="logo-img">
+    <nav>
+      <a href="https://wa.me/34660415982" class="btn" style="margin:0; padding: 10px 20px;">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Detalles con alma para tus eventos</h1>
+      <p>Personalizamos tus momentos más especiales con diseños únicos hechos en Murcia.</p>
+      <a href="https://wa.me/34660415982" class="btn">Pedir Presupuesto WhatsApp</a>
+    </div>
+    <div class="hero-img-container">
+      <img src="meraki 2.jpeg" alt="Producto Meraki">
+    </div>
+  </section>
+
+  <h2 style="text-align:center; font-family:'Playfair Display'; font-size: 2.5rem;">Nuestras Creaciones</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="meraki 1.jpeg" alt="Detalle 1">
+      <div class="card-body"><h3>Diseño Exclusivo</h3><p>Artesanía pura para tu boda.</p></div>
+    </div>
+    <div class="card">
+      <img src="meraki 2.jpeg" alt="Detalle 2">
+      <div class="card-body"><h3>Regalos Personalizados</h3><p>Grabados con mimo.</p></div>
+    </div>
+    <div class="card">
+      <img src="meraki 3.jpeg" alt="Detalle 3">
+      <div class="card-body"><h3>Pack Eventos</h3><p>Todo listo para tus invitados.</p></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Meraki Estudio Creativo - Murcia</p>
+    <p>© 2026</p>
+  </footer>
+
+</body>
+</html>
